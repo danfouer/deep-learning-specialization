@@ -65,5 +65,5 @@ This is the first course of the Deep Learning Specialization.
 
 **Programming Assignments**
 - [x] Programming Assignment FAQ
-- [x] Practice Programming Assignment: Python Basics with numpy (optional) [**score: 100%**]
-- [x] Programming Assignment: Logistic Regression with a Neural Network mindset [**score: 100%**]
+- [x] Practice Programming Assignment: [Python Basics with numpy](https://github.com/jscriptcoder/deep-learning-specialization/blob/master/neural-networks/Python_Basics_With_Numpy_v3.py) (optional) [**score: 100%**]
+- [x] Programming Assignment: [Logistic Regression with a Neural Network mindset](https://github.com/jscriptcoder/deep-learning-specialization/blob/master/neural-networks/Logistic_Regression_with_a_Neural_Network_mindset_v3.py) [**score: 100%**]
