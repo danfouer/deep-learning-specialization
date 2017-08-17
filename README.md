@@ -10,8 +10,8 @@ processing. The idea is not only mastering the theory, but also see how it is ap
 in Python and in TensorFlow.
 
 ## Courses
-1. [Neural Networks and Deep Learning](https://github.com/jscriptcoder/deep-learning-specialization/tree/master/neural_networks).
-2. [Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization](https://github.com/jscriptcoder/deep-learning-specialization/tree/master/improving_deep_nn).
-3. [Structuring Machine Learning Projects](https://github.com/jscriptcoder/deep-learning-specialization/tree/master/structuring_ml_proj).
-4. [Convolutional Neural Networks](https://github.com/jscriptcoder/deep-learning-specialization/tree/master/convolutional_nn).
-5. [Sequence Models](https://github.com/jscriptcoder/deep-learning-specialization/tree/master/sequence_models).
+1. [Neural Networks and Deep Learning](https://github.com/jscriptcoder/deep-learning-specialization/tree/master/neural-networks).
+2. [Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization](https://github.com/jscriptcoder/deep-learning-specialization/tree/master/improving-deep-nn).
+3. [Structuring Machine Learning Projects](https://github.com/jscriptcoder/deep-learning-specialization/tree/master/structuring-ml-proj).
+4. [Convolutional Neural Networks](https://github.com/jscriptcoder/deep-learning-specialization/tree/master/convolutional-nn).
+5. [Sequence Models](https://github.com/jscriptcoder/deep-learning-specialization/tree/master/sequence-models).
