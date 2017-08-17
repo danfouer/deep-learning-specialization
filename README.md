@@ -1,4 +1,6 @@
-# Deep Learning specialization by Deeplearning.ai
+# Deep Learning specialization by [Deeplearning.ai](https://www.deeplearning.ai/)
+
+https://www.coursera.org/specializations/deep-learning
 
 AI is transforming multiple industries. This specialization is a great help to break into AI. Five courses that will help to learn the foundations of 
 Deep Learning, understand how to build neural networks and how to lead successful machine learning projects. Convolutional 
