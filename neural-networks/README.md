@@ -14,3 +14,56 @@ The foundations of deep learning are covered in this course:
 This course also teaches how Deep Learning actually works, rather than presenting only a cursory or surface-level description. The idea is to be able to apply deep learning to my own applications
 
 This is the first course of the Deep Learning Specialization.
+
+## Content:
+
+### Week 1 - Introduction to deep learning
+
+**Welcome to the Deep Learning Specialization**
+- [x] Welcome
+
+**Introduction to Deep Learning**
+- [x] What is a neural network?
+- [x] Supervised Learning with Neural Networks
+- [x] Why is Deep Learning taking off?
+- [x] About this Course
+- [x] Frequently Asked Questions
+- [x] Course Resources
+- [x] How to use Discussion Forums
+
+**Practice Questions**
+- [x] Quiz: Introduction to deep learning [**score: 90%**]
+
+---
+
+### Week 2 - Neural Networks Basics
+
+**Logistic Regression as a Neural Network**
+- [x] Binary Classification
+- [x] Logistic Regression
+- [x] Logistic Regression Cost Function
+- [x] Gradient Descent
+- [x] Derivatives
+- [x] More Derivative Examples
+- [x] Computation graph
+- [x] Derivatives with a Computation Graph
+- [x] Logistic Regression Gradient Descent
+- [x] Gradient Descent on m Examples
+
+**Python and Vectorization**
+- [x] Vectorization
+- [x] More Vectorization Examples
+- [x] Vectorizing Logistic Regression
+- [x] Vectorizing Logistic Regression's Gradient Output
+- [x] Broadcasting in Python
+- [x] A note on python/numpy vectors
+- [x] Quick tour of Jupyter/iPython Notebooks
+- [x] Explanation of logistic regression cost function (optional)
+
+**Practice Questions**
+- [x] Quiz: Neural Network Basics [**score: 90%**]
+
+**Programming Assignments**
+- [x] Programming Assignment FAQ
+- [x] Practice Programming Assignment: Python Basics with numpy (optional) [**score: 100%**]
+- [x] Programming Assignment: Logistic Regression with a Neural Network mindset [**score: 100%**]
