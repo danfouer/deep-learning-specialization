@@ -23,7 +23,7 @@
 # - [matplotlib](http://matplotlib.org) is a famous library to plot graphs in Python.
 # - [PIL](http://www.pythonware.com/products/pil/) and [scipy](https://www.scipy.org/) are used here to test your model with your own picture at the end.
 
-# In[1]:
+# In[88]:
 
 import numpy as np
 import matplotlib.pyplot as plt
@@ -47,7 +47,7 @@ get_ipython().magic('matplotlib inline')
 # 
 # Let's get more familiar with the dataset. Load the data by running the following code.
 
-# In[2]:
+# In[89]:
 
 # Loading the data (cat/non-cat)
 train_set_x_orig, train_set_y, test_set_x_orig, test_set_y, classes = load_dataset()
@@ -57,7 +57,7 @@ train_set_x_orig, train_set_y, test_set_x_orig, test_set_y, classes = load_datas
 # 
 # Each line of your train_set_x_orig and test_set_x_orig is an array representing an image. You can visualize an example by running the following code. Feel free also to change the `index` value and re-run to see other images. 
 
-# In[3]:
+# In[90]:
 
 # Example of a picture
 index = 25
@@ -73,7 +73,7 @@ print ("y = " + str(train_set_y[:, index]) + ", it's a '" + classes[np.squeeze(t
 #     - num_px (= height = width of a training image)
 # Remember that `train_set_x_orig` is a numpy-array of shape (m_train, num_px, num_px, 3). For instance, you can access `m_train` by writing `train_set_x_orig.shape[0]`.
 
-# In[8]:
+# In[91]:
 
 ### START CODE HERE ### (≈ 3 lines of code)
 m_train = train_set_x_orig.shape[0]
@@ -120,7 +120,7 @@ print ("test_set_y shape: " + str(test_set_y.shape))
 # X_flatten = X.reshape(X.shape[0], -1).T      # X.T is the transpose of X
 # ```
 
-# In[14]:
+# In[92]:
 
 # Reshape the training and test examples
 
@@ -169,7 +169,7 @@ print ("sanity check after reshaping: " + str(train_set_x_flatten[0:5,0]))
 # 
 # Let's standardize our dataset.
 
-# In[15]:
+# In[93]:
 
 train_set_x = train_set_x_flatten/255.
 test_set_x = test_set_x_flatten/255.
@@ -224,7 +224,7 @@ test_set_x = test_set_x_flatten/255.
 # 
 # **Exercise**: Using your code from "Python Basics", implement `sigmoid()`. As you've seen in the figure above, you need to compute $sigmoid( w^T x + b) = \frac{1}{1 + e^{-(w^T x + b)}}$ to make predictions. Use np.exp().
 
-# In[18]:
+# In[94]:
 
 # GRADED FUNCTION: sigmoid
 
@@ -246,7 +246,7 @@ def sigmoid(z):
     return s
 
 
-# In[19]:
+# In[95]:
 
 print ("sigmoid([0, 2]) = " + str(sigmoid(np.array([0,2]))))
 
@@ -264,7 +264,7 @@ print ("sigmoid([0, 2]) = " + str(sigmoid(np.array([0,2]))))
 # 
 # **Exercise:** Implement parameter initialization in the cell below. You have to initialize w as a vector of zeros. If you don't know what numpy function to use, look up np.zeros() in the Numpy library's documentation.
 
-# In[22]:
+# In[96]:
 
 # GRADED FUNCTION: initialize_with_zeros
 
@@ -291,7 +291,7 @@ def initialize_with_zeros(dim):
     return w, b
 
 
-# In[23]:
+# In[97]:
 
 dim = 2
 w, b = initialize_with_zeros(dim)
@@ -334,7 +334,7 @@ print ("b = " + str(b))
 # $$ \frac{\partial J}{\partial w} = \frac{1}{m}X(A-Y)^T\tag{7}$$
 # $$ \frac{\partial J}{\partial b} = \frac{1}{m} \sum_{i=1}^m (a^{(i)}-y^{(i)})\tag{8}$$
 
-# In[77]:
+# In[98]:
 
 # GRADED FUNCTION: propagate
 
@@ -382,7 +382,7 @@ def propagate(w, b, X, Y):
     return grads, cost
 
 
-# In[81]:
+# In[99]:
 
 w, b, X, Y = np.array([[1],[2]]), 2, np.array([[1,2],[3,4]]), np.array([[1,0]])
 grads, cost = propagate(w, b, X, Y)
@@ -417,7 +417,7 @@ print ("cost = " + str(cost))
 # 
 # **Exercise:** Write down the optimization function. The goal is to learn $w$ and $b$ by minimizing the cost function $J$. For a parameter $\theta$, the update rule is $ \theta = \theta - \alpha \text{ } d\theta$, where $\alpha$ is the learning rate.
 
-# In[82]:
+# In[100]:
 
 # GRADED FUNCTION: optimize
 
@@ -482,7 +482,7 @@ def optimize(w, b, X, Y, num_iterations, learning_rate, print_cost = False):
     return params, grads, costs
 
 
-# In[83]:
+# In[101]:
 
 params, grads, costs = optimize(w, b, X, Y, num_iterations= 100, learning_rate = 0.009, print_cost = False)
 
@@ -523,7 +523,7 @@ print ("db = " + str(grads["db"]))
 # 
 # 2. Convert the entries of a into 0 (if activation <= 0.5) or 1 (if activation > 0.5), stores the predictions in a vector `Y_prediction`. If you wish, you can use an `if`/`else` statement in a `for` loop (though there is also a way to vectorize this). 
 
-# In[86]:
+# In[102]:
 
 # GRADED FUNCTION: predict
 
@@ -561,7 +561,7 @@ def predict(w, b, X):
     return Y_prediction
 
 
-# In[87]:
+# In[103]:
 
 print ("predictions = " + str(predict(w, b, X)))
 
@@ -599,7 +599,7 @@ print ("predictions = " + str(predict(w, b, X)))
 #     - Y_prediction_train for your predictions on the train set
 #     - w, costs, grads for the outputs of optimize()
 
-# In[ ]:
+# In[106]:
 
 # GRADED FUNCTION: model
 
@@ -623,18 +623,18 @@ def model(X_train, Y_train, X_test, Y_test, num_iterations = 2000, learning_rate
     ### START CODE HERE ###
     
     # initialize parameters with zeros (≈ 1 line of code)
-    w, b = None
+    w, b = initialize_with_zeros(X_train.shape[0])
 
     # Gradient descent (≈ 1 line of code)
-    parameters, grads, costs = None
+    parameters, grads, costs = optimize(w, b, X_train, Y_train, num_iterations, learning_rate, print_cost)
     
     # Retrieve parameters w and b from dictionary "parameters"
     w = parameters["w"]
     b = parameters["b"]
     
     # Predict test/train set examples (≈ 2 lines of code)
-    Y_prediction_test = None
-    Y_prediction_train = None
+    Y_prediction_test = predict(w, b, X_test)
+    Y_prediction_train = predict(w, b, X_train)
 
     ### END CODE HERE ###
 
@@ -656,7 +656,7 @@ def model(X_train, Y_train, X_test, Y_test, num_iterations = 2000, learning_rate
 
 # Run the following cell to train your model.
 
-# In[ ]:
+# In[107]:
 
 d = model(train_set_x, train_set_y, test_set_x, test_set_y, num_iterations = 2000, learning_rate = 0.005, print_cost = True)
 
@@ -683,7 +683,7 @@ d = model(train_set_x, train_set_y, test_set_x, test_set_y, num_iterations = 200
 # 
 # Also, you see that the model is clearly overfitting the training data. Later in this specialization you will learn how to reduce overfitting, for example by using regularization. Using the code below (and changing the `index` variable) you can look at predictions on pictures of the test set.
 
-# In[ ]:
+# In[108]:
 
 # Example of a picture that was wrongly classified.
 index = 1
@@ -693,7 +693,7 @@ print ("y = " + str(test_set_y[0,index]) + ", you predicted that it is a \"" + c
 
 # Let's also plot the cost function and the gradients.
 
-# In[ ]:
+# In[109]:
 
 # Plot learning curve (with costs)
 costs = np.squeeze(d['costs'])
@@ -718,7 +718,7 @@ plt.show()
 # 
 # Let's compare the learning curve of our model with several choices of learning rates. Run the cell below. This should take about 1 minute. Feel free also to try different values than the three we have initialized the `learning_rates` variable to contain, and see what happens. 
 
-# In[ ]:
+# In[110]:
 
 learning_rates = [0.01, 0.001, 0.0001]
 models = {}
@@ -756,10 +756,10 @@ plt.show()
 #     3. Change your image's name in the following code
 #     4. Run the code and check if the algorithm is right (1 = cat, 0 = non-cat)!
 
-# In[ ]:
+# In[113]:
 
 ## START CODE HERE ## (PUT YOUR IMAGE NAME) 
-my_image = "my_image.jpg"   # change this to the name of your image file 
+my_image = "sandal_cat.jpg"   # change this to the name of your image file 
 ## END CODE HERE ##
 
 # We preprocess the image to fit your algorithm.
