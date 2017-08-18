@@ -65,5 +65,32 @@ This is the first course of the Deep Learning Specialization.
 
 **Programming Assignments**
 - [x] Programming Assignment FAQ
-- [x] Practice Programming Assignment: Python Basics with numpy (optional) [**score: 100%**]
-- [x] Programming Assignment: Logistic Regression with a Neural Network mindset [**score: 100%**]
+- [x] Practice Programming Assignment: [Python Basics with numpy](https://github.com/jscriptcoder/deep-learning-specialization/blob/master/neural-networks/Python_Basics_With_Numpy_v3.py) (optional) [**score: 100%**]
+- [x] Programming Assignment: [Logistic Regression with a Neural Network mindset](https://github.com/jscriptcoder/deep-learning-specialization/blob/master/neural-networks/Logistic_Regression_with_a_Neural_Network_mindset_v3.py) [**score: 100%**]
+
+---
+
+### Week 3 - Shallow neural networks
+
+**Shallow Neural Network**
+- [ ] Neural Networks Overview
+- [ ] Neural Network Representation
+- [ ] Computing a Neural Network's Output
+- [ ] Vectorizing across multiple examples
+- [ ] Explanation for Vectorized Implementation
+- [ ] Activation functions
+- [ ] Why do you need non-linear activation functions?
+- [ ] Derivatives of activation functions
+- [ ] Gradient descent for Neural Networks
+- [ ] Backpropagation intuition (optional)
+- [ ] Random Initialization
+
+**Practice Questions**
+- [ ] Quiz: Shallow Neural Networks
+
+**Programming Assignment**
+- [ ] Programming Assignment: Planar data classification with a hidden layer
+
+---
+
+### Week 4 - Deep Neural Networks
